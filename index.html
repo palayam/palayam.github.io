@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Breakout</h1>
+  </header>
+
+  <div id="gameScreen">
+    <img src="left.png" id="lArrow" width="40" height="40">
+    <img src="right.png" id="rArrow" width="40" height="40">
+    <div id="rules">
+      <h3 class="rule-words">
+        Rules
+      </h3>
+      <ol>
+        <li>Select initial direction of the momentum of the ball:<br><b><i class="hyphen">.</i>N<i class="hyphen">.</i></b> for left & <b><i class="hyphen">.</i>M<i class="hyphen">.</i></b> for right</li>
+        <li>To move the paddle:<br><b><i class="hyphen">.</i>LEFT<i class="hyphen">.</i></b> & <b><i class="hyphen">.</i>RIGHT<i class="hyphen">.</i></b> key on the keypad<br>OR<br>Hover your mouse over the playing area</li>
+        <li>If you miss the ball, you will lose a life</li>
+        <li>Miss the ball <span id="live-display">0</span> times and the game ends!</li>
+        <li>If you want to end the game at any time, just press <b><i class="hyphen">.</i>G<i class="hyphen">.</i></b></li>
+        <li>Try your best. Good Luck!!!</li>
+      </ol>
+      <h3 class="rule-words">
+        Abilities & Bonuses
+      </h3>
+      <ul>
+        <li><strong class="redBrick">▮</strong>: increase the paddle width by 1.5x for 10 seconds</li><br>
+        <li><strong class="whiteBrick">▮</strong>: give you a second controllable paddle for 15 seconds<br>Use <b><i class="hyphen">.</i>N<i class="hyphen">.</i></b> for left & <b><i class="hyphen">.</i>M<i class="hyphen">.</i></b> for right</li><br>
+        <li><strong class="goldBrick">▮</strong>:<b><i class="hyphen">.</i>100<i class="hyphen">.</i></b> points automatically!!</li><br>
+        <li><strong class="plusBrick"><i class="greenHyphen">.</i>+<i class="greenHyphen">.</i></strong>: Gives you one extra life</li>
+      </ul><br>
+      <h3>When you are ready to play, press <b><i class="hyphen">-</i>SPACE BAR<i class="hyphen">-</i></b></h3>
+    </div>
+    <canvas id="myCanvas" width="500" height="600"></canvas>
+    <div id="scores">
+      <h3>Score</h3>
+      <span id="score-display">0</span>
+      <h3>Balls</h3>
+      <span id="lives-display">0</span>
+    </div>
+  </div>
+
+  <div id="endScreen">
+    <!-- <div>The creator's top score is 572.</div> -->
+    <br><h1>FINAL SCORE<br><span id="final-score-display">0</span></h1>
+    <h3>Would you like to try again?</h3><br>
+    <button onClick="window.location.reload();">Reset</button>
+  </div>
+</body>
+
+</html>

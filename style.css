@@ -1,0 +1,132 @@
+body {
+  padding-top: 96px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(50, 50, 50);
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+canvas {
+  background: rgb(200, 200, 200);
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #87CEFA;
+  color: #000080;
+  text-align: center;
+}
+
+b {
+  background-color: #87CEFA;
+  color: #000080;
+  font-size: 18px;
+}
+
+.hyphen {
+  color: #87CEFA;
+}
+
+.greenHyphen {
+  color: #007A33;
+}
+
+#gameScreen {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+#rules {
+  flex-grow: 1;
+  text-align: center;
+  max-width: 33%;
+}
+
+#scores {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 32px;
+  max-width: 33%;
+}
+
+
+button {
+  background-color: #0095DD;
+  border: 3px solid #0095DD;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 16px;
+  top: 50%;
+  bottom: 50%;
+}
+
+button:hover {
+  background-color: white;
+  color: #0095DD;
+}
+
+button:active {
+  background-color: #0095DD;
+  color: white;
+  border: 3px solid white;
+}
+
+li {
+  text-align: left;
+}
+
+#lArrow {
+position: absolute;
+top: 610px;
+left: 713px;
+}
+
+#rArrow {
+  position: absolute;
+  top: 610px;
+  left: 783px;
+}
+
+.rule-words {
+  text-decoration: underline;
+}
+
+.redBrick {
+  color: #DC143C;
+  font-size: 24px;
+}
+
+.whiteBrick {
+  color: #FFFDD0;
+  font-size: 24px;
+}
+
+.goldBrick {
+  color: #DAA520;
+  font-size: 24px;
+}
+
+.plusBrick {
+  background-color: #007A33;
+  color: #FFFFFF;
+  font-size: 24px;
+}
+
+#final-score-display {
+  font-size: 192px;
+}
