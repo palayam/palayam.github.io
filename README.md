@@ -3,8 +3,8 @@
 This is a game called Breakout
 
 Rules
-1. Select initial direction of the momentum of the ball:N for left & M for right
-2. To move the paddle:LEFT & RIGHT key on the keypad OR Hover your mouse over the playing area
+1. Select initial direction of the momentum of the ball: N for left & M for right
+2. To move the paddle: LEFT & RIGHT key on the keypad OR Hover your mouse over the playing area
 3. If you miss the ball, you will lose a life
 4. Miss the ball 3 times and the game ends!
 5. If you want to end the game at any time, just press G
